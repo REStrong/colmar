@@ -1,0 +1,35 @@
+html {
+  font-size: 16px;
+}
+
+ul {
+  display: flex;
+}
+
+.banner {
+  display: flex;
+}
+
+.tagline {
+  display: flex;
+}
+
+.practice {
+  display: flex;
+}
+
+.byte {
+  display: flex;
+}
+
+.courses {
+  display: flex;
+}
+
+.thesis {
+  display: flex;
+}
+
+footer {
+  display: flex;
+}
