@@ -8,10 +8,16 @@ ul {
 
 .banner {
   display: flex;
+  height: 64px;
 }
 
 .tagline {
   display: flex;
+}
+
+.tagline img {
+  width: 60%;
+  margin: 32px 24px;
 }
 
 .practice {
