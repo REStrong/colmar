@@ -1,19 +1,11 @@
 html {
   font-size: 16px;
-  line-height: 1.5;
 }
 
 body {
   font-family: Helvetica;
 }
 
-.container {
-  width:
-}
-
-.right {
-  width: 423px;
-}
 
 ul {
   display: flex;
@@ -23,7 +15,7 @@ li {
   margin-right: 1rem;
 }
 
-.banner {
+header {
   display: flex;
   height: 4rem;
   background-color: pink;
@@ -31,8 +23,7 @@ li {
   justify-content: space-between;
   position: fixed;
   width: 100%;
-  z-index: 5;
-  margin-bottom: 4rem;
+  top: 0px;
 }
 
 .icon-menu {
@@ -44,34 +35,29 @@ li {
   background-color: gray;
 }
 
-.banner img {
+header img {
   margin-left: 1.5rem;
-}
-
-.feature img {
-  margin: 2rem 1.5rem;
-  width: 60%;
-  height: auto;
 }
 
 
 .tagline {
   display: flex;
   align-content: center;
+  margin-top: 4rem;
 }
 
 .tagline img {
-  height: auto;
   width: 60%;
-  margin: 1.5rem;
+  margin: 2rem 1.5rem;
 }
 
 .practice {
   display: flex;
 }
 
-.info-byte {
-
+.feature img {
+  width: 60%;
+  margin: 2rem 1.5rem;
 }
 
 .byte {
@@ -81,8 +67,8 @@ li {
 
 .byte img {
   width: 35%;
-  margin: 1rem;
   height: auto;
+  margin: 1rem;
 }
 
 .courses {
