@@ -1,41 +1,106 @@
 html {
   font-size: 16px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: Helvetica;
+}
+
+.container {
+  width:
+}
+
+.right {
+  width: 423px;
 }
 
 ul {
   display: flex;
 }
 
+li {
+  margin-right: 1rem;
+}
+
 .banner {
   display: flex;
-  height: 64px;
+  height: 4rem;
+  background-color: pink;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  margin-bottom: 4rem;
 }
+
+.icon-menu {
+  display: none;
+}
+
+.container {
+  width: 100%;
+  background-color: gray;
+}
+
+.banner img {
+  margin-left: 1.5rem;
+}
+
+.feature img {
+  margin: 2rem 1.5rem;
+  width: 60%;
+  height: auto;
+}
+
 
 .tagline {
   display: flex;
+  align-content: center;
 }
 
 .tagline img {
+  height: auto;
   width: 60%;
-  margin: 32px 24px;
+  margin: 1.5rem;
 }
 
 .practice {
   display: flex;
 }
 
+.info-byte {
+
+}
+
 .byte {
   display: flex;
+  width: 423px;
+}
+
+.byte img {
+  width: 35%;
+  margin: 1rem;
+  height: auto;
 }
 
 .courses {
   display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .thesis {
   display: flex;
 }
 
+.exhibit {
+  display: flex;
+}
+
 footer {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
