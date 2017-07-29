@@ -14,6 +14,10 @@ li {
   margin-right: 1rem;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   width: 100%;
 }
@@ -27,12 +31,22 @@ li {
 header {
   display: flex;
   height: 4rem;
-  background-color: pink;
+  background-color: white;
   align-items: center;
   justify-content: space-between;
   position: fixed;
   width: 100%;
   top: 0px;
+}
+
+header .one {
+  font-size: 1.5rem;
+  color: black;
+}
+
+header .two {
+  font-size: 1.5rem;
+  color: gray;
 }
 
 .icon-menu {
@@ -53,13 +67,30 @@ header img {
   .logo {
     display: none;
   }
+  header li {
+    margin: 0;
+  }
+  header img {
+    margin: 0;
+  }
+  header ul {
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  header ul li {
+    display: block;
+    flex: 0 1 auto;
+    list-style-type: none;
+  }
 }
 
 /* tagline */
 
 .tagline {
   display: flex;
-  align-content: center;
+  align-items: center;
   margin-top: 4rem;
 }
 
@@ -74,11 +105,26 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  align-items: center;
   width: 40%;
 }
 
+.tagtext h1 {
+  margin-left: 1rem;
+}
+
+.tagtext h3 {
+  margin-left: 1rem;
+  font-weight: normal;
+}
+
 button {
-  padding: .5rem 2rem;
+  padding: .5rem 4rem;
+  font-size: 1rem;
+  background-color: darkgray;
+  color: white;
+  margin-left: 1rem;
+  float: left;
 }
 
 @media only screen and (max-width: 480px) {
@@ -91,19 +137,22 @@ button {
     display: none;
   }
   .tagtext {
-    margin-top: 15.25rem;
-    margin color: darkgray;
+    border-top: solid 15.25rem darkgray;
     width:100%;
+    justify-content: left;
   }
   .tagtext h1 {
     padding: 2rem 1rem;
+    margin: 0;
   }
   .tagtext h3 {
-    padding-left: 1rem;
+    margin: 0 0 1.5rem 1rem;
   }
   button {
-    padding-top: 1.5rem;
-    padding-bottom: 2rem;
+    padding: .5rem 9.5rem;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
 
@@ -130,6 +179,11 @@ button {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.feature .citation {
+  font-size: .75rem;
+  padding-top: 2rem;
 }
 
 .info-byte {
@@ -163,6 +217,11 @@ button {
 
 .byte-text span {
   margin-bottom: .5rem;
+  font-size: .75rem;
+}
+
+.byte-tex a {
+  font-size: .75rem;
 }
 
 @media only screen and (max-width: 480px) {
@@ -206,7 +265,9 @@ button {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
 }
 
 .course {
@@ -222,6 +283,11 @@ button {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.course h4 {
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 .course-text {
@@ -244,7 +310,7 @@ button {
   .courses {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 0;
   }
 
   .course {
@@ -300,6 +366,8 @@ button {
   display: flex;
   max-width: 423px;
   max-height: 168px;
+  justify-content: left;
+  align-items: center;
 }
 
 .exhibit img {
