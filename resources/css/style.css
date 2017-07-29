@@ -6,13 +6,20 @@ body {
   font-family: Helvetica;
 }
 
-
 ul {
-  display: flex;
+  display: inline-flex;
 }
 
 li {
   margin-right: 1rem;
+}
+
+.container {
+  width: 100%;
+}
+
+.contrast {
+  background-color: lightgray;
 }
 
 /* header */
@@ -28,37 +35,25 @@ header {
   top: 0px;
 }
 
-@media only screen and (max-width: 450px){
-  .icon-menu {
-    display: flex;
-  }
-  .menu {
-    display: none;
-  }
-  .one {
-    display: none;
-  }
-  .two {
-    display: none;
-  }
-}
-
 .icon-menu {
   display: none;
-}
-
-.container {
-  width: 100%;
-}
-
-.contrast {
-  background-color: lightgray;
 }
 
 header img {
   margin-left: 1.5rem;
 }
 
+@media only screen and (max-width: 480px){
+  .icon-menu {
+    display: inline;
+  }
+  .menu {
+    display: none;
+  }
+  .logo {
+    display: none;
+  }
+}
 
 /* tagline */
 
@@ -84,7 +79,7 @@ button {
   padding: .5rem 2rem;
 }
 
-@media only screen and (max-width 450px) {
+@media only screen and (max-width 480px) {
   .tagline {
     flex-direction: column;
     margin-top: 180px;
@@ -96,6 +91,8 @@ button {
     width:100%;
   }
 }
+
+/* practice */
 
 .practice {
   display: flex;
@@ -121,11 +118,13 @@ button {
 .info-byte {
   margin-top: 1rem;
   border-left: 1px solid lightgrey;
+  width: 40%;
 }
 
 .byte {
   display: flex;
   width: 423px;
+  height: 168px;
 }
 
 .byte img {
@@ -152,9 +151,19 @@ button {
     display: none;
   }
   .info-byte {
+    width: 100%;
+  }
+  .byte {
+    display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+  .byte img {
+    width: 100%
   }
 }
+
+/* learning */
 
 .learning {
   justify-content: center;
@@ -197,6 +206,38 @@ button {
   padding-bottom: .5rem;
 }
 
+@media only screen and (max-width: 480px) {
+
+  .learning {
+    background-color: white;
+  }
+
+  .courses {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .course {
+    width: 100%;
+  }
+
+  .course img {
+    display: none;
+  }
+  .course-text .type {
+    display: none;
+  }
+  .course-text .description {
+    display: none;
+  }
+  .course-text {
+    background-color: lightgrey;
+    padding: 1rem auto 1rem 1rem;
+  }
+}
+
+/* thesis */
+
 .thesis-exhibit h2 {
   width: 100%;
   text-align: center;
@@ -234,6 +275,23 @@ button {
 .exhibit-text {
   justify-content: center;
 }
+
+@media only screen and (max width: 480px) {
+  .exhibits {
+    display: none;
+  }
+  .exhibit {
+    display: none;
+  }
+  .exhibit img {
+    display: none;
+  }
+  .exhibit-text {
+    display: none;
+  }
+}
+
+/* footer */
 
 footer {
   display: flex;
