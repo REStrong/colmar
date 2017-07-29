@@ -61,11 +61,12 @@ header img {
   display: flex;
   align-content: center;
   margin-top: 4rem;
-  width: 100%;
 }
 
 .tagline img {
   width: 60%;
+  height: auto;
+  display: block;
   padding: 2rem 1.5rem;
 }
 
@@ -73,6 +74,7 @@ header img {
   display: flex;
   flex-direction: column;
   justify-content: left;
+  width: 40%;
 }
 
 button {
@@ -113,6 +115,8 @@ button {
 
 .feature img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .info-byte {
@@ -123,12 +127,14 @@ button {
 
 .byte {
   display: flex;
-  width: 423px;
-  height: 168px;
+  max-width: 423px;
+  max-height: 168px;
 }
 
 .byte img {
   width: 35%;
+  height: auto;
+  display: block;
   padding: 1rem;
 }
 
@@ -146,7 +152,7 @@ button {
   margin-bottom: .5rem;
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 480px) {
   .feature {
     display: none;
   }
@@ -157,9 +163,12 @@ button {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-height: none;
   }
   .byte img {
-    width: 100%
+    width: 90%;
+    height: 10%;
+    display: block;
   }
 }
 
@@ -193,6 +202,8 @@ button {
 
 .course img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .course-text {
@@ -219,11 +230,18 @@ button {
 
   .course {
     width: 100%;
+    padding: 0;
+    margin: 0;
   }
 
+  .course h4 {
+    margin: .25rem 1rem;
+    padding: 1rem auto 1rem 1rem;
+}
   .course img {
     display: none;
   }
+
   .course-text .type {
     display: none;
   }
@@ -263,8 +281,8 @@ button {
 
 .exhibit {
   display: flex;
-  width: 423px;
-  height: 168px;
+  max-width: 423px;
+  max-height: 168px;
 }
 
 .exhibit img {
@@ -299,4 +317,10 @@ footer {
   justify-content: space-between;
   padding-left: 1.5rem;
   border-top: 1px solid lightgray;
+}
+
+@media only screen and {
+  footer nav {
+    display: none;
+  }
 }
