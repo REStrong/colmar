@@ -81,16 +81,29 @@ button {
   padding: .5rem 2rem;
 }
 
-@media only screen and (max-width 480px) {
+@media only screen and (max-width: 480px) {
   .tagline {
     flex-direction: column;
-    margin-top: 180px;
+    margin-top: 0;
   }
+
   .tagline img {
     display: none;
   }
   .tagtext {
+    margin-top: 15.25rem;
+    margin color: darkgray;
     width:100%;
+  }
+  .tagtext h1 {
+    padding: 2rem 1rem;
+  }
+  .tagtext h3 {
+    padding-left: 1rem;
+  }
+  button {
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
   }
 }
 
@@ -167,9 +180,14 @@ button {
   }
   .byte img {
     width: 90%;
-    height: 10%;
+    height: auto;
     display: block;
   }
+  .byte-text {
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+  }
+
 }
 
 /* learning */
@@ -226,6 +244,7 @@ button {
   .courses {
     display: flex;
     flex-direction: column;
+    padding: 1rem;
   }
 
   .course {
@@ -234,9 +253,10 @@ button {
     margin: 0;
   }
 
-  .course h4 {
+  .course-text h4 {
     margin: .25rem 1rem;
-    padding: 1rem auto 1rem 1rem;
+    padding: 1rem;
+    background-color: lightgray;
 }
   .course img {
     display: none;
@@ -245,12 +265,9 @@ button {
   .course-text .type {
     display: none;
   }
+
   .course-text .description {
     display: none;
-  }
-  .course-text {
-    background-color: lightgrey;
-    padding: 1rem auto 1rem 1rem;
   }
 }
 
@@ -294,17 +311,22 @@ button {
   justify-content: center;
 }
 
-@media only screen and (max width: 480px) {
+@media only screen and (max-width: 480px) {
+  .video {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1.5rem;
+  }
+  .video h4 {
+    display: none;
+  }
+  .video span {
+    display: none;
+  }
   .exhibits {
     display: none;
   }
   .exhibit {
-    display: none;
-  }
-  .exhibit img {
-    display: none;
-  }
-  .exhibit-text {
     display: none;
   }
 }
@@ -319,8 +341,14 @@ footer {
   border-top: 1px solid lightgray;
 }
 
-@media only screen and {
+@media only screen and (max-width: 480px){
   footer nav {
     display: none;
+  }
+  footer span {
+    padding: 16px 0;
+  }
+  footer {
+    border: none;
   }
 }
