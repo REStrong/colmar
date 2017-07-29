@@ -67,19 +67,26 @@ header img {
   .logo {
     display: none;
   }
+
+  icon-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
   header li {
     margin: 0;
   }
   header img {
     margin: 0;
   }
-  header ul {
+  icon-menu ul {
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
   }
-  header ul li {
+  icon-menu li {
     display: block;
     flex: 0 1 auto;
     list-style-type: none;
